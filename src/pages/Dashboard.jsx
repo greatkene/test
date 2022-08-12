@@ -21,13 +21,13 @@ function Dashboard() {
         <BigCircle />
         <Box zIndex="999999" position={"absolute"} width="100%">
           <Header />
-          <Text fontSize="36px" fontWeight="400" ml={"40px"} mt={"30px"}>
+          <Text fontSize="36px" fontWeight="400" ml={"40px"} mt={"20px"}>
             Dashboard
           </Text>
           <Flex
             justifyContent="space-between"
             alignItems="center"
-            marginTop="33px"
+            marginTop="13px"
           >
             <Flex
               alignItems="center"
@@ -39,12 +39,12 @@ function Dashboard() {
             </Flex>
           </Flex>
           <Flex
-            marginTop="76px"
+            marginTop="50px"
             justifyContent="space-between"
             alignItems="center"
           >
             <PurpleCard />
-            <Box ml="52px">
+            <Box mr="5.2rem">
               <Flex>
                 <GeneralHealthCard />
                 <SleepCard />
