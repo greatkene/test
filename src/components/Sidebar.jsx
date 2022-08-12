@@ -31,6 +31,7 @@ function Sidebar() {
             backgroundColor={item.isActive ? "#F8F8FC" : "transparent"}
             display={"flex"}
             position={"relative"}
+            
           >
             {item.isActive && (
               <Box

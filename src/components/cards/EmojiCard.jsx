@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Img, Text } from "@chakra-ui/react";
+import { Box, Img, position, Text } from "@chakra-ui/react";
 import happy from "../../assets/dashboard/emojis/happy.png";
 import okay from "../../assets/dashboard/emojis/okay.png";
 import confused from "../../assets/dashboard/emojis/confused.png";
 import arrow from "../../assets/dashboard/arrow.svg";
+import polygon from "../../assets/dashboard/polygon.png";
+import rectangle from "../../assets/dashboard/rectangle.png"
 
 function EmojiCard() {
   const emoji = [
@@ -36,8 +38,32 @@ function EmojiCard() {
       mr="40px"
       borderRadius="5px"
       boxShadow="0px 4px 12px rgba(0, 0, 0, 0.05)"
+      _before={{
+        content: `''`,
+        position: "absolute",
+        top: "13%",
+        right: "19%",
+        w: "17%",
+        h: "100%",
+        backgroundImage: rectangle,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        zIndex: -1
+      }}
+      _after={{
+        content: `''`,
+        position: "absolute",
+        top: "27.5%",
+        left: "94%",
+        w: "50px",
+        h: "50px",
+        backgroundImage: polygon,
+        backgroundSize: "contain",
+        backgroundRepeat: "no-repeat",
+        zIndex: -1
+      }}
     >
-      <Text fontSize="20px" mt="20px" mb="28px" ml="18px" fontWeight="400">
+      <Text fontSize="20px" lineHeight="20px" mt="20px" mb="28px" ml="18px" fontWeight="400">
         How are you doing today?
       </Text>
       <Box display="flex" justifyContent="space-between" alignItems="center">

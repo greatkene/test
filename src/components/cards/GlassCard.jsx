@@ -10,10 +10,12 @@ function GlassCard() {
       height="163px"
       width="366px"
       borderRadius="5px"
-      backgroundColor={"rgba(255, 255, 255, 0.38)"}
+      backgroundColor= "#FEF6E34D"
       backdropFilter="blur(16px)"
       display={"flex"}
       justifyContent={"center"}
+      borderColor = "#FFD49B"
+      borderWidth= "0.5px"
     >
       <Box
         width="136px"
@@ -27,6 +29,7 @@ function GlassCard() {
         alignItems={"center"}
         flexDirection={"column"}
         position={"relative"}
+        mt = "0.7rem"
       >
         <Box
           display={"flex"}
