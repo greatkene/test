@@ -13,7 +13,7 @@ function DashboardLayout({ children }) {
           flexGrow={1}
           height="100vh"
           backgroundColor="#F5FBFF"
-          width={"100vw"}
+          width={"83vw"}
           overflowY="scroll"
         >
           {children}

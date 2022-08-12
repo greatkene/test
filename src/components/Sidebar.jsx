@@ -10,6 +10,7 @@ import {
 } from "@chakra-ui/react";
 import logo from "../assets/dashboard/logo.svg";
 import sidebarItems from "../utils/sidebarItems";
+import CustomLink from "../utils/CustomLink";
 function Sidebar() {
   return (
     <Flex flexDir={"column"} width="238px">
@@ -23,39 +24,10 @@ function Sidebar() {
       />
       <UnorderedList listStyleType="none" position={"relative"}>
         {sidebarItems.slice(0, -1).map((item, index) => (
-          <ListItem
-            as={Link}
-            key={index}
-            width="100%"
-            height={"52px"}
-            backgroundColor={item.isActive ? "#F8F8FC" : "transparent"}
-            display={"flex"}
-            position={"relative"}
-            
-          >
-            {item.isActive && (
-              <Box
-                position={"absolute"}
-                backgroundColor="#655EB0"
-                height="27px"
-                width="6px"
-                right="0"
-                transform="translateY(13px)"
-                borderRadius="5px 0px 0px 5px"
-              ></Box>
-            )}
-            <Link href={item.to} display="flex" alignItems="center">
-              <Img
-                src={item.icon}
-                alt={item.name}
-                ml={"36.67px"}
-                mr={"27.67px"}
-              />
-              <Text fontSize="16px" fontWeight="400">
-                {item.name}
-              </Text>
-            </Link>
-          </ListItem>
+          
+          <CustomLink key={item.id} icon={item.icon} to={item.to}  >
+            {item.name}
+          </CustomLink>
         ))}
         <ListItem
           width="100%"

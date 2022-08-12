@@ -7,36 +7,42 @@ import logout from "../assets/dashboard/sidebar/logout.svg";
 
 const sidebarItems = [
   {
+    id: 0,
     name: "Dashboard",
     to: "/",
     icon: dashboard,
     isActive: true,
   },
   {
+    id: 1,
     name: "Appointments",
     to: "/appointments",
     icon: appointments,
     isActive: false,
   },
   {
+    id: 2,
     name: "Statistics",
     to: "/statistics",
     icon: statistics,
     isActive: false,
   },
   {
+    id: 3,
     name: "Chat",
     to: "/chat",
     icon: chat,
     isActive: false,
   },
   {
+    id: 4,
     name: "Settings",
     to: "/settings",
     icon: settings,
     isActive: false,
   },
   {
+    id: 5,
     name: "Logout",
     to: "/logout",
     icon: logout,

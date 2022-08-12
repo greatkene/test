@@ -1,5 +1,5 @@
 import React from "react";
-import { Flex, Img, Text } from "@chakra-ui/react";
+import { Flex, Img, Text, Box } from "@chakra-ui/react";
 import notifications from "../assets/notifications.svg";
 function Header() {
   return (
