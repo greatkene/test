@@ -55,6 +55,9 @@ h1 {
   border-radius: 10px;
   transform: translate(50%, -50%);
 }
+ ul {
+   margin-left: 0 !important;
+ }
 
 @media (prefers-color-scheme: light) {
   :root {
