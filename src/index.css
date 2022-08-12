@@ -39,6 +39,7 @@ h1 {
   position: relative;
   overflow: hidden;
   margin: 0 !important ;
+  border-radius: 0 !important;
 }
 
 .button:after {
