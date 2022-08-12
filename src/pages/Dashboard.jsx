@@ -1,5 +1,5 @@
 import React from "react";
-import DashboardLayout from "../layouts/dashboardLayout";
+import DashboardLayout from "../layouts/DashboardLayout";
 import { Text, Box, Flex } from "@chakra-ui/react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
